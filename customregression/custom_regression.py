@@ -19,8 +19,12 @@ class CustomRegression:
         regression_line = [(m * x) + b for x in x]
 
         r_squared = util.cod(y, regression_line)
+
+        predict_x = 5
+        predict_y = (m * predict_x + b)
         print(r_squared)
 
         plt.scatter(x, y, label="data")
+        plt.scatter(predict_x, predict_y, color="g")
         plt.plot(x, regression_line, label="regression line")
         plt.show()

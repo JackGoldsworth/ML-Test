@@ -1,1 +1,1 @@
-from .stock_regression import StockRegression
+from stock_regression import StockRegression
